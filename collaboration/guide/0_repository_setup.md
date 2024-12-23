@@ -17,7 +17,6 @@ repository and configure it for collaboration:
   - Update your main README with your group name and an initial overview of your project. (You can change this as much as you want.)
 - Under settings in your repository select:
   - _Issues_
-  - _Discussions_
   - _Projects_
   - _Always suggest updating pull request branches_
 - Collaboration Settings
