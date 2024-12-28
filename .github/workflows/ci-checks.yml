@@ -4,19 +4,19 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   ls_linting:
-      runs-on: ubuntu-latest
-      steps:  
-        - uses: actions/checkout@v4
-        - uses: ls-lint/action@v2.2.3
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ls-lint/action@v2.2.3
 
   md_formatting:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: nosborn/github-action-markdown-cli@v3.3.0
-      with:
-        files: .
-        config_file: .markdownlint.yml
+      - uses: actions/checkout@v4
+      - uses: nosborn/github-action-markdown-cli@v3.3.0
+        with:
+          files: .
+          config_file: .markdownlint.yml
 
   py_formatting:
     runs-on: ubuntu-latest
@@ -55,11 +55,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: python version
         run: python --version
         shell: bash
-      
+
       - name: Check for test files
         id: check_tests
         run: |
@@ -69,8 +69,8 @@ jobs:
             echo "has_tests=false" >> $GITHUB_OUTPUT
           fi
         shell: bash
-      
+
       - name: Python - Run Tests
         if: steps.check_tests.outputs.has_tests == 'true'
-        run: python -m unittest
+        run: python -m unittest discover -s solutions/tests -p "test_*.py"
         shell: bash
