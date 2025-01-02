@@ -13,17 +13,20 @@ ______________________________________________________________________
 
 ## Communication Schedule
 
-| Day | How | The topic of discussion | | --- | :-: | ----------------------- |
-| | | |
+| Day         | How        | The topic of discussion         |
+| ----------- | ---------  | ------------------------------ |
+| 23.12.24    | Kick-off   | Introduction and project overview |
+| 30.12.2024  | Weekly update | Progress review and task allocation |
+| 06.01.2025  | Deadline Check | Retrospective and deadline review |
 
 ## Communication Channels
 
-how often will we get in touch on each channel, and what we will discuss there:
+How often will we get in touch on each channel, and what we will discuss there:
 
-- **Issues**:
-- **Pull Requests**:
-- **Slack/Discord**:
-- **Video Calls**:
+- **Issues**: Asynchronous, to discuss and track tasks.
+- **Pull Requests**: Asynchronous, to review and merge code changes.
+- **Slack/WhatsApp**: Asynchronous, for general communication and updates.
+- **Video Calls**: Weekly on Mondays, with additional one-on-one calls as needed.
 
 ______________________________________________________________________
 
@@ -31,13 +34,13 @@ ______________________________________________________________________
 
 ### Availability for calling/messaging
 
-| Day | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday | |
------- | :----: | :-----: | :-------: | :------: | :----: | :------: | :----: |
-| _name_ | | | | | | | |
+| Day                | Monday         | Tuesday        | Wednesday      | Thursday       | Friday         | Saturday       | Sunday         |
+| ------------------ | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
+| Yevheniia Rudenko  | 14:00-20:00    | 14:00-20:00    | 14:00-20:00    | 14:00-20:00    | 14:00-20:00    | 19:00-21:00    | 19:00-21:00    |
 
 ### How many hours everyone has per day
 
-- name: _5h_;
+- Yevheniia Rudenko: ~5h;
 - name: _6h_;
 - name: _5h_;
 - name: _4h_;
