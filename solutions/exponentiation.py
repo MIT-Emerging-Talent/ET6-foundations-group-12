@@ -39,8 +39,8 @@ def exponentiation(base: float, exponent: int) -> float:
       0.25
     """
     if not isinstance(base, (float, int)):
-        raise TypeError("The base must be a float or int")
+        raise TypeError(f"Invalid base: {base}. The base must be a float or int")
     if not isinstance(exponent, int):
-        raise TypeError("The exponent must be an int")
+        raise TypeError(f"Invalid exponent: {exponent}. The exponent must be an int")
 
-    return base**exponent
+    return float(base**exponent)

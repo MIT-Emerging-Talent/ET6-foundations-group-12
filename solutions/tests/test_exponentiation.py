@@ -46,3 +46,21 @@ class TestExponentiation(unittest.TestCase):
         """It should raise a TypeError for an invalid exponent"""
         with self.assertRaises(TypeError):
             exponentiation(2, "3")
+
+    def test_exponentiation_large_exponent(self):
+        """It should handle large exponents correctly"""
+        actual = exponentiation(2, 1000)
+        expected = 2**1000
+        self.assertEqual(actual, expected)
+
+    def test_exponentiation_zero_base_positive_exponent(self):
+        """It should return 0.0 when the base is 0 and exponent is positive"""
+        actual = exponentiation(0, 3)
+        expected = 0.0
+        self.assertEqual(actual, expected)
+
+    def test_exponentiation_zero_base_zero_exponent(self):
+        """It should return 1.0 when both base and exponent are 0"""
+        actual = exponentiation(0, 0)
+        expected = 1.0
+        self.assertEqual(actual, expected)
