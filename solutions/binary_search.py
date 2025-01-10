@@ -7,7 +7,8 @@ Module contents:
     - binary_search: Performs binary search on a sorted list.
 
 Created on 2024-12-27
-Author: Awaab98"""
+Author: Awaab98
+"""
 
 from typing import List, Union
 
@@ -16,14 +17,14 @@ def binary_search(
     list_to_be_searched: List[Union[int, float, str]],
     target_element: Union[int, float, str],
 ) -> int:
-    """Performs binary search on a sorted list to find the index of a target element
-    using recursion.
-    if there are multiple occurrences of the target element in the list, the function
+    """
+    Performs binary search on a sorted list to find the index of a target element using recursion.
+    If there are multiple occurrences of the target element in the list, the function
     returns the index of the first occurrence.
 
     Parameters:
-        list_to_be_searched: int, float, str: A sorted list in ascending order to be searched.
-        target_element: int, float, str: The element to be searched for in the list.
+        list_to_be_searched: List[Union[int, float, str]]: A sorted list in ascending order to be searched.
+        target_element: Union[int, float, str]: The element to be searched for in the list.
 
     Returns:
         int: The index of the target element in the list if it is found.
@@ -65,8 +66,8 @@ def binary_search(
         raise TypeError("All elements in the list must be of the same type.")
 
     # Ensure that the elements of the list belong to one of the following types: int, float, str
-    if type(list_to_be_searched[0]) not in [int, float, str]:
-        raise TypeError("The list must contain elements of type int, float or str.")
+    if not isinstance(list_to_be_searched[0], (int, float, str)):
+        raise TypeError("The list must contain elements of type int, float, or str.")
 
     # Ensure that the second argument is of the same type as the elements of the list
     if not isinstance(target_element, type(list_to_be_searched[0])):
