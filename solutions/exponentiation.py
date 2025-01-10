@@ -1,3 +1,14 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+A module for generating exponentiation of two numbers (inputs) "base" and "exponent"
+
+Module contents:
+    - Exponentiation: finds the exponentiation value of two numbers.
+
+Created on 05.01.2025
+@author: Zephaniah Okoye
+"""
 def exponentiation(base: float, exponent: int) -> float:
     """
     Compute the exponentiation of a base raised to a given exponent.

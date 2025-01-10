@@ -7,7 +7,7 @@ Created on 05.01.2025
 """
 
 import unittest
-from ..exponentiation import exponentiation
+from solutions.exponentiation import exponentiation
 
 
 class TestExponentiation(unittest.TestCase):
