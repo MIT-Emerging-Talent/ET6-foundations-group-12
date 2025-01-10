@@ -1,16 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-A module for generating exponentiation of two numbers (inputs) "a base (float)" and "an exponent (int)"
-
-Module contents:
-    - Exponentiation: finds the exponents of two numbers; both integers and floats.
-
-Created on 05.01.2025
-@author: Zephaniah Okoye
-"""
-
-
 def exponentiation(base: float, exponent: int) -> float:
     """
     Compute the exponentiation of a base raised to a given exponent.
@@ -39,8 +26,8 @@ def exponentiation(base: float, exponent: int) -> float:
       0.25
     """
     if not isinstance(base, (float, int)):
-        raise TypeError(f"Invalid base: {base}. The base must be an int")
+        raise TypeError(f"Invalid base: {base}. The base must be a float or int")
     if not isinstance(exponent, int):
-        raise TypeError(f"Invalid exp: {exponent}. The exp must be an int")
+        raise TypeError(f"Invalid exponent: {exponent}. The exponent must be an int")
 
     return float(base**exponent)
