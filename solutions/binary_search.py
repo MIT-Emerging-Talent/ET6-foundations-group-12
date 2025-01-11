@@ -1,17 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-A module for a function that performs binary search on a sorted list.
-
-Module contents:
-    - binary_search: Performs binary search on a sorted list.
-
-Created on 2024-12-27
-Author: Awaab98
-"""
-
 from typing import List, Union
-
 
 def binary_search(
     list_to_be_searched: List[Union[int, float, str]],
@@ -31,7 +18,7 @@ def binary_search(
 
     Raises:
         TypeError: If the first argument is not a list.
-        TypeError: If the list is not a list of integers, floats or strings.
+        TypeError: If the list is not a list of integers, floats, or strings.
         TypeError: If the elements of the list are not of the same type.
         TypeError: If the second argument is not of the same type as the elements of the list.
         ValueError: If the list is empty.
@@ -59,26 +46,20 @@ def binary_search(
     if len(list_to_be_searched) == 0:
         raise ValueError("The list must not be empty.")
 
-    # Ensure that all elements of the list are of the same type
-    if not all(
-        isinstance(x, type(list_to_be_searched[0])) for x in list_to_be_searched
-    ):
-        raise TypeError("All elements in the list must be of the same type.")
-
     # Ensure that the elements of the list belong to one of the following types: int, float, str
     if not isinstance(list_to_be_searched[0], (int, float, str)):
         raise TypeError("The list must contain elements of type int, float, or str.")
 
+    # Ensure that all elements of the list are of the same type
+    if not all(isinstance(x, type(list_to_be_searched[0])) for x in list_to_be_searched):
+        raise TypeError("All elements in the list must be of the same type.")
+
     # Ensure that the second argument is of the same type as the elements of the list
     if not isinstance(target_element, type(list_to_be_searched[0])):
-        raise TypeError(
-            "The second argument must be of the same type as the elements of the list."
-        )
+        raise TypeError("The second argument must be of the same type as the elements of the list.")
 
     # Ensure that the list is sorted in ascending order
-    assert list_to_be_searched == sorted(
-        list_to_be_searched
-    ), "The list must be sorted in ascending order."
+    assert list_to_be_searched == sorted(list_to_be_searched), "The list must be sorted in ascending order."
 
     # Internal function logic: Recursively perform binary search
     def search_recursively(low_index: int, high_index: int) -> int:
@@ -90,9 +71,7 @@ def binary_search(
         # Check the middle element
         if list_to_be_searched[middle_index] == target_element:
             return middle_index
-        elif (
-            list_to_be_searched[middle_index] < target_element
-        ):  # Search in the right half
+        elif list_to_be_searched[middle_index] < target_element:  # Search in the right half
             return search_recursively(middle_index + 1, high_index)
         else:  # Search in the left half
             return search_recursively(low_index, middle_index - 1)
