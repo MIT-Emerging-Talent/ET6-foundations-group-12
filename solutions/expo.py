@@ -9,6 +9,8 @@ Module contents:
 Created on 05.01.2025
 @author: Zephaniah Okoye
 """
+
+
 def exponentiation(base: float, exponent: int) -> float:
     """
     Compute the exponentiation of a base raised to a given exponent.
