@@ -1,3 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+A module for computing the square value of  a given number.
+
+Module contents:
+    - square: Computes the absolute value of a given number.
+
+Created on 12-31-2024
+
+@author: Ayomide Ayodele
+"""
+
 import unittest
 from solutions.square import square
 
@@ -51,6 +64,26 @@ class TestSquareFunction(unittest.TestCase):
         - Negatve Decimal Numbers
         """
         self.assertAlmostEqual(square(-2.5), 6.25)
+
+    def test_type_error_for_non_number_input(self):
+        """It should raise a TypeError for non-number input"""
+        with self.assertRaises(TypeError):
+            square(True)
+
+    def test_type_error_for_string_input(self):
+        """It should raise a TypeError for string input"""
+        with self.assertRaises(TypeError):
+            square("16")
+
+    def test_type_error_for_list_input(self):
+        """It should raise a TypeError for list input"""
+        with self.assertRaises(TypeError):
+            square([1, 2, 3])
+
+    def test_type_error_for_dict_input(self):
+        """It should raise a TypeError for dict input"""
+        with self.assertRaises(TypeError):
+            square({"a": 12})
 
 
 if __name__ == "__main__":

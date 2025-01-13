@@ -1,3 +1,17 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+A module for computing the square value of  a given number.
+
+Module contents:
+    - square: Computes the absolute value of a given number.
+
+Created on 12-31-2024
+
+@author: Ayomide Ayodele
+"""
+
+
 def square(num: int | float) -> int | float:
     """
     Calculate the square of a number.
@@ -18,5 +32,7 @@ def square(num: int | float) -> int | float:
     >>> square(1.5)
     2.25
     """
+    if not isinstance(num, (int, float)):
+        raise TypeError(f"The input: {num} must be an int or float")
     result = num**2
     return int(result) if isinstance(num, int) else float(result)
