@@ -36,3 +36,9 @@ def square(num: int | float) -> int | float:
         raise TypeError(f"The input: {num} must be an int or float")
     result = num**2
     return int(result) if isinstance(num, int) else float(result)
+
+
+if __name__ == "__main__":
+    import doctest
+
+    doctest.testmod()
