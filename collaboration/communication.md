@@ -13,17 +13,20 @@ ______________________________________________________________________
 
 ## Communication Schedule
 
-| Day | How | The topic of discussion | | --- | :-: | ----------------------- |
-| | | |
+| Day         | How        | The topic of discussion         |
+| ----------- | ---------  | ------------------------------ |
+| 23.12.24    | Kick-off   | Introduction and project overview |
+| 30.12.2024  | Weekly update | Progress review and task allocation |
+| 06.01.2025  | Deadline Check | Retrospective and deadline review |
 
 ## Communication Channels
 
-how often will we get in touch on each channel, and what we will discuss there:
+How often will we get in touch on each channel, and what we will discuss there:
 
-- **Issues**:
-- **Pull Requests**:
-- **Slack/Discord**:
-- **Video Calls**:
+- **Issues**: Asynchronous, to discuss and track tasks.
+- **Pull Requests**: Asynchronous, to review and merge code changes.
+- **Slack/WhatsApp**: Asynchronous, for general communication and updates.
+- **Video Calls**: Weekly on Mondays, with additional one-on-one calls as needed.
 
 ______________________________________________________________________
 
@@ -31,17 +34,25 @@ ______________________________________________________________________
 
 ### Availability for calling/messaging
 
-| Day | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday | |
------- | :----: | :-----: | :-------: | :------: | :----: | :------: | :----: |
-| _name_ | | | | | | | |
+|Day|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|
+|-|-|-|-|-|-|-|-|
+|Yevheniia Rudenko|14:00-20:00|14:00-20:00|14:00-20:00| 14:00-20:00|14:00-20:00|19:00-21:00|19:00-21:00|
+|Abdul Qader Dost|17:00-21:00| 17:00-21:00|17:00-21:00| 17:00-21:00 |17:00-21:00|14:00-20:00|14:00-20:00|
+|Awaab Hussein|21:00-00:00|21:00-00:00| 21:00-00:00|21:00-00:00|21:00-00:00|21:00-00:00|21:00-00:00|
+|Lukmon Alao|21:00-00:00|21:00-00:00| 21:00-00:00|21:00-00:00|21:00-00:00|21:00-00:00|21:00-00:00|
+|Ridwan Ayinde|21:00-00:00|21:00-00:00| 21:00-00:00|21:00-00:00|21:00-00:00|13:00-16:00|13:00-16:00|
+|Zephaniah Okoye|19:00-23:00|19:00-23:00|19:00-23:00|19:00-23:00|19:00-23:00|12:00-17:00|14:00-19:00|
+|Olubusayo Solola|20:00-00:00|21:00-00:00| 20:00-00:00|21:00-00:00|20:00-00:00|13:00-16:00|12:00-16:00|
 
 ### How many hours everyone has per day
 
-- name: _5h_;
-- name: _6h_;
-- name: _5h_;
-- name: _4h_;
-- name: _3h_;
+- Yevheniia Rudenko: _~5h_;
+- Abdul Qader Dost: _~4_;
+- Awaab Hussein: _~3h_;
+- Lukmon Alao: _3h_;
+- Ridwan Ayinde: _3h_;
+- Zephaniah Okoye: _~4h_;
+- Olubusayo Solola: _2h_;
 
 ## Asking for Help
 
